@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "399871807270",
+    "project_id": "didi-app-7e938",
+    "storage_bucket": "didi-app-7e938.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399871807270:android:ebb289b7dfe60d62893be7",
+        "android_client_info": {
+          "package_name": "com.example.quickpick"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD14T6qALB5w8HpNqzbUTShO1EKbzC9FyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
