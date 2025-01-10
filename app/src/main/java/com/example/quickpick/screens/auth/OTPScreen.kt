@@ -67,19 +67,6 @@ fun OTPScreen(phoneNumber:String,navController: NavController,viewModel:AuthView
                 .padding(innerPadding)
                 .fillMaxSize()
         ) {
-//            Box(modifier = Modifier.padding(top = 64.dp, start = 26.dp)) {
-//                Button(
-//                    onClick = { navController.popBackStack() },
-//                    shape = CircleShape,
-//                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF369BFF))
-//                ) {
-//                    Image(
-//                        painter = painterResource(id = R.drawable.backarrow),
-//                        contentDescription = "Back"
-//                    )
-//                }
-//            }
-
             Text(
                 modifier = Modifier
                     .padding(top = 230.dp)
@@ -128,6 +115,8 @@ fun OTPScreen(phoneNumber:String,navController: NavController,viewModel:AuthView
                                 when (result) {
                                     is ResultState.Success -> {
                                         Toast.makeText(context, result.toString(), Toast.LENGTH_LONG).show()
+                                        navController.popBackStack()
+                                        navController.navigate("details")
                                         isDialog=false
                                     }
                                     is ResultState.Failure -> {
