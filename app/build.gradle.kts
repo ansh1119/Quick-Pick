@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.quickpick"
+    namespace = "com.founders.quickpick"
     compileSdk = 35
 
 
@@ -17,7 +17,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.quickpick"
+        applicationId = "com.founders.quickpick"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -71,6 +71,8 @@ dependencies {
     implementation(libs.firebase.auth.ktx)
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.androidx.runtime.livedata)
+    implementation(libs.firebase.storage.ktx)
+    implementation(libs.firebase.messaging.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -104,6 +106,9 @@ dependencies {
 
     // OkHttp logging interceptor (optional, useful for debugging)
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+
+    implementation ("io.coil-kt:coil-compose:2.4.0")
+    implementation ("io.coil-kt:coil-svg:2.4.0")
 
 
 }

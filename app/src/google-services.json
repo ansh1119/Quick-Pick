@@ -1,21 +1,40 @@
 {
   "project_info": {
-    "project_number": "169465075908",
-    "project_id": "quick-pick-c429c",
-    "storage_bucket": "quick-pick-c429c.firebasestorage.app"
+    "project_number": "1044488517133",
+    "project_id": "quickpick-c17ee",
+    "storage_bucket": "quickpick-c17ee.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:169465075908:android:7f37af97b9f8abdc6f1191",
+        "mobilesdk_app_id": "1:1044488517133:android:07af08ee4b1e6373bac744",
         "android_client_info": {
-          "package_name": "com.example.quickpick"
+          "package_name": "com.example.quickpick2"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBIBe1-dVKFJviJ2FpsKl0ys0TvVa_v34s"
+          "current_key": "AIzaSyBkIOncuZMgv2JSYabBuJ0eWjcmDtBixrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044488517133:android:1c5cbde8fd90fdb3bac744",
+        "android_client_info": {
+          "package_name": "com.founders.quickpick"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkIOncuZMgv2JSYabBuJ0eWjcmDtBixrU"
         }
       ],
       "services": {
