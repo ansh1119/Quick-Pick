@@ -48,6 +48,14 @@ import com.founders.quickpick.utils.ResultState
 import com.founders.quickpick.viewmodel.AuthViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
+import androidx.compose.runtime.*
+import androidx.compose.ui.text.input.ImeAction
+import kotlinx.coroutines.launch
 
 @Composable
 fun LoginScreen(navController: NavController, viewModel: AuthViewModel = hiltViewModel()) {
@@ -102,18 +110,20 @@ fun LoginScreen(navController: NavController, viewModel: AuthViewModel = hiltVie
             modifier = Modifier
                 .fillMaxWidth(.7f)
                 .padding(top = 8.dp),
-            KeyboardOptions(keyboardType = KeyboardType.Text)
+            KeyboardOptions(keyboardType = KeyboardType.Text).copy(
+                imeAction = ImeAction.Next
+            )
         )
+
 //        // Submit Button
 //        Button(
 //            onClick = {
-//                navController.navigate("college/$name")
+//                navController.navigate("college/\$name")
 //            },
 //            modifier = Modifier.fillMaxWidth()
 //        ) {
 //            Text("Submit")
 //        }
-
 
         TextField(
             modifier = Modifier
@@ -136,6 +146,8 @@ fun LoginScreen(navController: NavController, viewModel: AuthViewModel = hiltVie
             },
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Number // Numeric keyboard
+            ).copy(
+                imeAction = ImeAction.Done
             ),
             leadingIcon = {
                 Row {
@@ -215,4 +227,6 @@ fun LoginScreen(navController: NavController, viewModel: AuthViewModel = hiltVie
 
         Spacer(modifier = Modifier.weight(1f))
     }
+
 }
+

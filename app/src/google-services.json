@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1044488517133:android:07af08ee4b1e6373bac744",
+        "mobilesdk_app_id": "1:1044488517133:android:1c5cbde8fd90fdb3bac744",
         "android_client_info": {
-          "package_name": "com.example.quickpick2"
+          "package_name": "com.founders.quickpick"
         }
       },
       "oauth_client": [],
@@ -26,9 +26,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1044488517133:android:1c5cbde8fd90fdb3bac744",
+        "mobilesdk_app_id": "1:1044488517133:android:cace1cd256a66b4cbac744",
         "android_client_info": {
-          "package_name": "com.founders.quickpick"
+          "package_name": "com.users.quickpick2"
         }
       },
       "oauth_client": [],
